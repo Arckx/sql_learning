@@ -8009,5 +8009,6 @@ select country, avg(creditLimit) as avg_credit_limit
 from customers
 group by country;
 
+-- List employees and how many customers they manage.
 
 
