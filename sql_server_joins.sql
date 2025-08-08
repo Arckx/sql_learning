@@ -96,3 +96,15 @@ FULL JOIN customers AS c
 ON c.id = o.customer_id
 WHERE c.id IS NULL OR o.customer_id IS NULL;
 
+/* TASK */
+
+/* Get all customers along with their orders, but only for customers
+who have placed an order (Without using INNER JOIN) */
+
+SELECT *
+FROM orders AS o
+FULL JOIN customers AS c
+ON c.id = o.customer_id
+WHERE o.customer_id IS NOT NULL;
+
+
