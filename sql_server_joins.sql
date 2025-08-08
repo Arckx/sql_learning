@@ -159,3 +159,11 @@ LEFT JOIN orders AS o
 ON c.id = o.customer_id
 WHERE o.customer_id IS NOT NULL;
 
+/* CROSS JOIN */
+
+/* Generate all the possible combinations of customers and orders */
+
+SELECT *
+FROM customers AS c
+CROSS JOIN orders AS o;
+
