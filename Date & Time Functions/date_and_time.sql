@@ -55,3 +55,13 @@ CreationTime,
 DATENAME(month, CreationTime) AS Month_dn,
 DATENAME(weekday, CreationTime) AS weekday_dn
 FROM Sales.Orders;
+
+/* DateTrunc Function */
+
+SELECT
+OrderID,
+CreationTime,
+DATETRUNC(minute, CreationTime) AS Minute_dt,
+DATETRUNC(day, CreationTime) AS Day_dt
+FROM Sales.Orders;
+
